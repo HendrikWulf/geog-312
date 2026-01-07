@@ -1,0 +1,65 @@
+version: 1
+project:
+  title: Introduction to GIS Programming
+  authors:
+    - name: Qiusheng Wu
+  copyright: '2025'
+  exclude:
+    - _build
+    - Thumbs.db
+    - .DS_Store
+    - '**.ipynb_checkpoints'
+  github: giswqs/intro-gispro
+  thebe:
+    binder:
+      repo: giswqs/intro-gispro
+      provider: github
+      url: https://mybinder.org
+      ref: main
+  bibliography:
+    - book/references.bib
+  toc:
+    - file: index.md
+    - title: Preface
+      children:
+        - file: book/preface.ipynb
+    - title: Software Setup
+      children:
+        - file: book/software/overview.ipynb
+        - file: book/software/conda.ipynb
+        - file: book/software/vscode.ipynb
+        - file: book/software/git.ipynb
+        - file: book/software/colab.ipynb
+        - file: book/software/jupyterlab.ipynb
+        - file: book/software/docker.ipynb
+    - title: Python Programming Fundamentals
+      children:
+        - file: book/python/variables.ipynb
+        - file: book/python/data-structures.ipynb
+        - file: book/python/string-operations.ipynb
+        - file: book/python/looping.ipynb
+        - file: book/python/functions-classes.ipynb
+        - file: book/python/files.ipynb
+        - file: book/python/numpy-pandas.ipynb
+    - title: Geospatial Programming with Python
+      children:
+        - file: book/geospatial/get-started.ipynb
+        - file: book/geospatial/geopandas.ipynb
+        - file: book/geospatial/rasterio.ipynb
+        - file: book/geospatial/xarray.ipynb
+        - file: book/geospatial/rioxarray.ipynb
+        - file: book/geospatial/leafmap.ipynb
+        - file: book/geospatial/whitebox.ipynb
+        - file: book/geospatial/maplibre.ipynb
+        - file: book/geospatial/geemap.ipynb
+        - file: book/geospatial/hypercoast.ipynb
+        - file: book/geospatial/duckdb.ipynb
+        - file: book/geospatial/gdal.ipynb
+        - file: book/geospatial/solara.ipynb
+        - file: book/geospatial/sedona.ipynb
+site:
+  options:
+    logo: logo.png
+    favicon: fav.ico
+    folders: true
+  template: book-theme
